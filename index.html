@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" contet="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Only -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Lab Equiment Survey Form</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <form id="survey-form">
+        <h1 id="title">Science Lab Equipment Survey Form</h1>
+        <p id="description">
+          This Form is designed to collect information from the students about
+          the lab necessary and outdated equipment so the
+          <strong>College Staff</strong> updates it.
+        </p>
+
+        <div id="form-elements">
+          <section id="credentials">
+            <label id="name-label"
+              >Name
+              <input
+                id="name"
+                type="text"
+                placeholder="Enter Your Name"
+                required
+            /></label>
+            <label id="email-label"
+              >Email
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Your Email"
+                required
+            /></label>
+            <label id="number-label"
+              >Age
+              <input
+                id="number"
+                type="number"
+                min="7"
+                max="17"
+                placeholder="Age (7-17)"
+                required
+            /></label>
+          </section>
+
+          <section id="replaceable-things">
+            <h4>Which equipment you think needs to be replaced?</h4>
+            <select id="dropdown">
+              <option>(select one)</option>
+              <option>Pendulum</option>
+              <option>Microscopes</option>
+              <option>Flask</option>
+              <option>Test Tube</option>
+              <option>Magnifiers</option>
+            </select>
+          </section>
+
+          <section id="class-identificaton">
+            <h4>From Which Section are you?</h4>
+            <label id="section"
+              ><input type="radio" name="section" value="Junior" />
+              Junior</label
+            >
+            <label id="section"
+              ><input type="radio" name="section" value="Senior" />
+              Senior</label
+            >
+          </section>
+
+          <section id="missing">
+            <h4>Which Things you would like us to add in Lab?</h4>
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Tuning
+              Fork</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Graduated
+              Cylinder</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Tongs</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Dry Cell
+              Battery</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Dissecting
+              Set</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Alcohol
+              Burner</label
+            >
+            <label
+              ><input type="checkbox" value="equipment-to-add" /> Bunsen
+              Burner</label
+            >
+
+            <label
+              ><h4>Your thoughts about current lab scenario?</h4>
+              <textarea rows="5" cols="30"></textarea>
+            </label>
+          </section>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+  </body>
+</html>
